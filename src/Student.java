@@ -8,8 +8,12 @@ public class Student extends BasisClass {
         this.age = age;
     }
 
-    public String show() {
-        return "Student: " + toString() + " " + "wiek:" + age;
+    @Override
+    public void show() {
+        System.out.print("Student: ");
+        super.show();
+        System.out.print(", wiek: ");
+        System.out.println(" " + age);
     }
 
 

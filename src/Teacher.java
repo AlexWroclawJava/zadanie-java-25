@@ -10,9 +10,11 @@ public class Teacher extends BasisClass {
         this.salary = salary;
     }
 
-
-    public String show() {
-        return "Nauczyciel: " + toString() + " " + "wzrost:" + height + " " + "wynagrodzenie: " + salary;
+    @Override
+    public void show() {
+        System.out.print("Nauczyciel: ");
+        super.show();
+        System.out.println(", wzrost:" + height + " " + "wynagrodzenie: " + salary);
     }
 
 
